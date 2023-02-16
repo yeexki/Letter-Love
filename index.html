@@ -1,102 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Love Letter Generator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-  background-image: url('BrightWin.jpg');
-  background-size: cover;
-  color: #f75353;
-  text-align: center;
-  padding: 20px;
-}
-
-      h1 {
-        font-size: 36px;
-        margin: 0;
-      }
-      form {
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		height: 500px;
-	width: 1000px;
-      }
-      label {
-        font-size: 24px;
-      }
-      input, select {
-        font-size: 20px;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: #f8f8f8;
-        margin-bottom: 20px;
-      }
-      select {
-        width: 100%;
-      }
-      button {
-        font-size: 24px;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        background-color: #f75353;
-        color: #fff;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: #e64646;
-      }
-      #message {
-        font-size: 28px;
-        margin-bottom: 20px;
-      }
-
-	 
-    </style>
+    <title>Welcome to Happie Place</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to Happy Place</h1>
-    </header>
-    <form>
-      <label for="name">Your name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="color-select">Choose a color:</label>
-      <select id="color-select" name="color" required>
-        <option value="" selected disabled hidden>Select a color</option>
-        <option value="red">Red</option>
-        <option value="pink">Pink</option>
-        <option value="purple">Purple</option>
-        <option value="blue">Blue</option>
-        <option value="green">Green</option>
-      </select>
-
-      <div id="message"></div>
-
-      <button type="button" onclick="generateLetter()">Generate Letter</button>
-    </form>
-    <script>
-      function generateLetter() {
-        var name = document.getElementById("name").value;
-        var partner = document.getElementById("partner").value;
-        var color = document.getElementById("color-select").value;
-        var message = document.getElementById("message");
-        
-        if (color === "red") {
-          message.textContent = `Dear ${partner}, roses are red, violets are blue, sugar is sweet, and so are you! Love, ${name}.`;
-        } else if (color === "pink") {
-          message.textContent = `Dear ${partner}, you are the love of my life, the sunshine in my day, and the joy in my heart. Love, ${name}.`;
-        } else if (color === "
-
+    <div class="container">
+      <h1>Welcome to Happie Place</h1>
+      <div id="content">
+        <p id="message"></p>
+        <div id="picture"></div>
+      </div>
+      <button onclick="generateMessage()">A lil Touch Won't Hurt-CLICK HERE JAAN</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
